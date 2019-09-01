@@ -1,0 +1,56 @@
+<div class="modal-content">
+<div class="modal-header">
+  <h4 class="modal-title">Formulario Product</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-row">
+    <div class="form-group col">
+      <label for="name">Name: </label>
+      <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+    </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col">
+      <label for="lastName">lastName</label>
+      <input type="lastName" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter lastName">
+    </div>
+    <div class="form-group col">
+      <label for="project">project</label>
+      <input type="project" class="form-control" id="project" aria-describedby="projectHelp" placeholder="Enter project">
+    </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col">
+      <label for="status">status</label>
+      <input type="status" class="form-control" id="status" aria-describedby="statusHelp" placeholder="Enter status">
+    </div>
+    <div class="form-group col">
+      <label for="capacity">capacity</label>
+      <input type="capacity" class="form-control" id="capacity" aria-describedby="capacityHelp" placeholder="Enter capacity">
+    </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col">
+      <label for="area">area</label>
+      <input type="area" class="form-control" id="area" aria-describedby="areaHelp" placeholder="Enter area">
+    </div>
+    <div class="form-group col">
+      <label for="assignmentMonth">assignmentMonth</label>
+      <input type="assignmentMonth" class="form-control" id="assignmentMonth" aria-describedby="assignmentMonthHelp" placeholder="Enter assignmentMonth">
+    </div>
+    </div>
+
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  <button type="button" class="btn btn-outline-dark" (click)="add(product)">Gurardar</button>
+</div>
+
+
+
+</div>
