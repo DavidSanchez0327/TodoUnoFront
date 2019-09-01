@@ -1,24 +1,24 @@
 import {Component, OnInit} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {iSofkiano} from 'src/app/sofkiano-list/iSofkiano.js';
-import {SofkianoService} from 'src/app/sofkiano-list/sofkiano.service';
+import {IProducts} from '../Products-list/iProducts';
 import {Observable} from 'rxjs';
+import {ProductsService} from '../Products-list/products.service';
 
 @Component({
-  selector: 'app-sofkiano-new-modal',
-  templateUrl: './sofkiano-new-modal.component.html',
+  selector: 'app-product-new-modal',
+  templateUrl: './TodoUno-new-modal.component.html',
   styleUrls: ['./TodoUno-new-modal.component.css']
 })
 export class TodoUnoNewModalComponent implements OnInit {
-  sofkiano: iSofkiano;
-  filterSofkiano: Observable<iSofkiano[]>;
-  sofkianos: iSofkiano[] = [];
+  product: IProducts;
+  filterProduct: Observable<IProducts[]>;
+  products: IProducts[] = [];
 
-  constructor(public activeModal: NgbActiveModal, private sofkianoService: SofkianoService) { }
+  constructor(public activeModal: NgbActiveModal, private productsService: ProductsService) { }
 
   ngOnInit() {
   }
-  add(sofkiano: iSofkiano) {
-    this.sofkianoService.postSofkiano(sofkiano).subscribe(sofkianos => this.sofkianos.push(sofkiano));
+  add(product: IProducts) {
+    this.productsService.updateProduct(product).subscribe(products => this.products.push(product));
   }
 }
