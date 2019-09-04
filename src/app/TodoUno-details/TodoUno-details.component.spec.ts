@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SofkianoDetailsComponent } from './TodoUno-details.component';
+import { TodoUnoDetailsComponent } from './TodoUno-details.component';
 
-describe('SofkianoDetailsComponent', () => {
-  let component: SofkianoDetailsComponent;
-  let fixture: ComponentFixture<SofkianoDetailsComponent>;
+describe('TodoUnoDetailsComponent', () => {
+  let component: TodoUnoDetailsComponent;
+  let fixture: ComponentFixture<TodoUnoDetailsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SofkianoDetailsComponent ]
+      declarations: [ TodoUnoDetailsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SofkianoDetailsComponent);
+    fixture = TestBed.createComponent(TodoUnoDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

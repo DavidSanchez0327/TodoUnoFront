@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-import { IProducts } from '../Products-list/iProducts';
+import { IProducts } from '../products-list/iProducts';
 
 @Component({
-  // tslint:disable-next-line:component-selector
-  selector: 'app-Products-list',
+  selector: 'app-todouno-details',
   templateUrl: './TodoUno-details.component.html',
   styleUrls: ['./TodoUno-details.component.css']
 })
-export class SofkianoDetailsComponent implements OnInit {
+export class TodoUnoDetailsComponent implements OnInit {
   pageTitle = 'Informacion del producto';
   product: IProducts;
 

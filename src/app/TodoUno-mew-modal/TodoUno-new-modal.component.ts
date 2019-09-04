@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {IProducts} from '../Products-list/iProducts';
+import {IProducts} from '../products-list/iProducts';
 import {Observable} from 'rxjs';
-import {ProductsService} from '../Products-list/products.service';
+import {ProductsService} from '../products-list/products.service';
 
 @Component({
   selector: 'app-product-new-modal',
@@ -19,6 +19,6 @@ export class TodoUnoNewModalComponent implements OnInit {
   ngOnInit() {
   }
   add(product: IProducts) {
-    this.productsService.updateProduct(product).subscribe(products => this.products.push(product));
+    this.productsService.create(product).subscribe(products => this.products.push(product));
   }
 }
